@@ -1,1 +1,1 @@
-# color-contrast-neural-network
+# Color Contrast - Neural Network
