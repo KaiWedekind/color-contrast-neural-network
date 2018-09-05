@@ -24,7 +24,7 @@
   }
 
   var updateScreen = function updateScreen(hex) {
-    var rgb = hex2rgb(event.target.value);
+    var rgb = hex2rgb(hex);
     var contrastColor = brain.likely(rgb, network);
     body.style.backgroundColor = hex;
     colorCode.style.color = contrastColor;
@@ -33,7 +33,7 @@
     colorCodeHex.style.color = hex;
     colorCodeHex.style.backgroundColor = contrastColor;
     colorPicker.value = hex;
-    console.log('rgb', rgb)
+    // console.log('rgb', rgb)
   }
 
   colorCode.value = colorPicker.value.substr(1);
