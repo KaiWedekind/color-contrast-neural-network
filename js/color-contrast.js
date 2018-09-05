@@ -6,20 +6,10 @@
 
   var network = new brain.NeuralNetwork();
   var data = [
-    { "input": { "r": "0.62", "g": "0.72", "b": "0.88" }, "output": { "white": 1 } },
-    { "input": { "r": "0.10", "g": "0.84", "b": "0.72" }, "output": { "white": 1 } },
-    { "input": { "r": "0.74", "g": "0.78", "b": "0.86" }, "output": { "white": 1 } },
-    { "input": { "r": "0.31", "g": "0.35", "b": "0.41" }, "output": { "black": 1 } },
-    { "input": { "r": "1.00", "g": "0.99", "b": "0.00" }, "output": { "white": 1 } },
-    { "input": { "r": "0.84", "g": "0.82", "b": "0.82" }, "output": { "black": 1 } },
-    { "input": { "r": "0.13", "g": "0.16", "b": "0.84" }, "output": { "white": 1 } },
-    { "input": { "r": "0.84", "g": "0.05", "b": "0.28" }, "output": { "white": 1 } },
-    { "input": { "r": "0.10", "g": "0.12", "b": "0.33" }, "output": { "white": 1 } },
-    { "input": { "r": "0.03", "g": "0.04", "b": "0.10" }, "output": { "white": 1 } },
-    { "input": { "r": "0.86", "g": "0.83", "b": "0.91" }, "output": { "black": 1 } },
-    { "input": { "r": "0.72", "g": "0.84", "b": "0.81" }, "output": { "black": 1 } },
-    { "input": { "r": "0.81", "g": "0.77", "b": "0.86" }, "output": { "black": 1 } },
-    { "input": { "r": "0.84", "g": "0.77", "b": "1.00" }, "output": { "black": 1 } },
+    { "input": { "r": "0.00", "g": "0.00", "b": "0.00" }, "output": { "white": 1 } },
+    { "input": { "r": "0.85", "g": "0.88", "b": "0.56" }, "output": { "black": 1 } },
+    { "input": { "r": "0.33", "g": "0.35", "b": "0.84" }, "output": { "white": 1 } },
+    { "input": { "r": "0.00", "g": "0.99", "b": "1.00" }, "output": { "black": 1 } }
   ]
 
   network.train(data);
